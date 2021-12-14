@@ -1,0 +1,18 @@
+.staff-card__container {
+  padding: 30px 0;
+}
+
+.staff-card__title {
+  @include text($fw: 500, $fs: 16px, $lh: 1.19);
+  text-align: center;
+  color: var(--third-title-color);
+
+  margin-bottom: 10px;
+}
+
+.staff-card__text {
+  @include text($fs: 16px, $lh: 1.19);
+  text-align: center;
+  color: var(--main-text-color);
+  margin-bottom: 16px;
+}
