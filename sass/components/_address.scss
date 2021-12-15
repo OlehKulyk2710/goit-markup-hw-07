@@ -1,15 +1,15 @@
 .address {
   font-style: inherit;
+
+  &__text {
+    margin-bottom: 9px;
+
+    @include text($lh: 1.71);
+    color: #ffffff;
+  }
 }
 
-.address__text {
-  margin-bottom: 9px;
-
-  @include text($lh: 1.71);
-  color: #ffffff;
-}
-
-.address__link {
+.address-list__link {
   display: block;
 
   @include text($lh: 1.71);
@@ -22,6 +22,6 @@
   }
 }
 
-.address__item:nth-child(1) {
+.address-list__item:nth-child(1) {
   margin-bottom: 9px;
 }
