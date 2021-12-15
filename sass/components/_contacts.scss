@@ -4,10 +4,10 @@
 
 .contacts__item {
   justify-content: flex-end;
-}
 
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .contacts__link {

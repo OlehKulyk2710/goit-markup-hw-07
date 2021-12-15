@@ -1,11 +1,12 @@
-.nav__list {
+.nav-list {
   display: flex;
-}
-.nav__item:not(:last-child) {
-  margin-right: 50px;
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
-.nav__link {
+.nav-list__link {
   @include text($fw: 500, $ls: 0.02em);
   color: var(--nav-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -18,13 +19,13 @@
   &:focus {
     color: var(--accent-color);
   }
+
+  &.current {
+    color: var(--accent-color);
+  }
 }
 
-.nav__link.current {
-  color: var(--accent-color);
-}
-
-.nav__item-wrap {
+.nav-list__item-wrap {
   position: relative;
 
   &:after {
